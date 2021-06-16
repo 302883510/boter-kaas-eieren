@@ -14,9 +14,7 @@ body {
     text-align: center;
     grid-template-columns: auto auto auto;
     background-color: white;
-    padding: 20px;
-    border: 6px solid black;
-    border-radius: 10px;
+    font-size: 40px;
 }
 .grid-item{
     padding: 20px;
