@@ -3,7 +3,7 @@ class speler
  constructor(naam, aanBeurt, symbool){
      this.aanBeurt=aanBeurt;
      this.score=0;
-     this.symbol=symbool
+     this.symbool=symbool
      this.naam=naam
  }
 
@@ -17,22 +17,24 @@ class speler
  }
   getSymbool()
   {
-      return this.symbol
+      return this.symbool
   }
-  ikBenAanBeurt()
-  {
-      return this.aanBeurt;
-    
-  }
-
-  wisselBeurt(){
-    if(this.aanBeurt===true){
-       this.aanBeurt=false;
-    } else {
-        this.aanBeurt=true;
+  benIkAanBeurt()
+    {
+        return this.aanBeurt;
     }
-  }
 
+  wisselBeurt()
+  {
+      if(this.aanBeurt===true){
+          this.aanBeurt=false;
+      } else {
+          this.aanBeurt=true;
+      }
+  }
+  show () {
+    return ` ${this.naam} ${this.symbool} ${this.score} <br>`;
+}
 
 
 
